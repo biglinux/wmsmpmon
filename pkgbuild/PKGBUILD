@@ -21,7 +21,7 @@ fi
 
 
 build() {
-    mkdir usr/bin
+    mkdir -p usr/bin
     cd wmsmpmon/wmsmpmon/wmSMPmon/
     make
     make destDir="$pkgdir" install
