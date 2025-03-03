@@ -24,7 +24,7 @@ build() {
     mkdir -p usr/bin
     cd wmsmpmon/wmsmpmon/wmSMPmon/
     make
-    make destDir="usr/bin" install
+    make install
 }
 
 
