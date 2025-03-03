@@ -2,8 +2,8 @@
 # Adapted for wmSMPmon 2.9.x and higher: Thomas Ribbrock
 
 # Change the following two to determine installation location
-BINDIR=/usr/local/bin/
-MANDIR=/usr/local/share/man/
+BINDIR=usr/bin/
+MANDIR=usr/share/man/
 
 SRC = general.c sysinfo-linux.c ../wmgeneral/wmgeneral.c wmSMPmon.c 
 EXE = wmSMPmon
