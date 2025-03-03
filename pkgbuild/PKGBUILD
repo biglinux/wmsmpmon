@@ -3,9 +3,9 @@
 pkgname=wmsmpmon
 pkgdesc="wmSMPmon"
 # depends=('')
-makedepends=('base-devel' 'libx11' 'libxext')
+makedepends=('base-devel' 'libx11' 'libxext' 'libxpmS')
 # conflicts=('')
-pkgver=2.2
+pkgver=2.2S
 pkgrel=1
 arch=('any')
 license=('GPL2')
