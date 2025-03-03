@@ -20,10 +20,11 @@ elif [ -e "pkgbuild.install" ];then
 fi
 
 
-prepare() {
+build() {
+    mkdir usr/bin
     cd wmsmpmon/wmsmpmon/wmSMPmon/
     make
-    make install
+    make destDir="$pkgdir" install
 }
 
 
