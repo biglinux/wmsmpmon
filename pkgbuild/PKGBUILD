@@ -1,14 +1,14 @@
 # Maintainer: Barnabé di Kartola <barnabedikartola@gmail.com>
 
-pkgname=biglinux-package-template
-pkgdesc="Package template for biglinux"
+pkgname=wmsmpmon
+pkgdesc="wmSMPmon"
 # depends=('')
-# makedepends=('')
+makedepends=('base-devel' 'libx11' 'libxext')
 # conflicts=('')
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=2.2
+pkgrel=1
 arch=('any')
-license=('GPL3')
+license=('GPL2')
 url="https://github.com/biglinux/$pkgname"
 provides=("$pkgname")
 source=("git+${url}.git")
@@ -18,6 +18,14 @@ if [ -e "${pkgname}.install" ];then
 elif [ -e "pkgbuild.install" ];then
     install=pkgbuild.install
 fi
+
+
+prepare() {
+    cd ../wmsmpmon/wmSMPmon
+    make 
+    make install usr/
+}
+
 
 package() {
     # Verify default folder
