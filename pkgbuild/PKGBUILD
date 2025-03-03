@@ -21,7 +21,7 @@ fi
 
 
 prepare() {
-    cd ../wmsmpmon/wmSMPmon
+    cd wmsmpmon/wmsmpmon/wmSMPmon/
     make 
     make install usr/
 }
